@@ -1,40 +1,32 @@
-# Getting Started
+# JWT Authentication
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+[![GitHub version](https://badge.fury.io/gh/xrusu%2Fjwt-auth.svg)](https://badge.fury.io/gh/xrusu%2Fjwt-auth)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/xrusu/jwt-auth/graphs/commit-activity)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-### What is this?
+JSON Web Token Authentication using Java and Spring Boot
 
-This is the repository for my homework on java unit testing from the Java Spring Advanced course.
 
-### Homework requirements
+## About
+This is an Auth Rest API, written in Spring Boot, that receives a username and password and registers the user. Authentication is then made using JWTs.
 
-* Create a Spring Boot project and design (code) an API for a Market (users have a cart, and add and remove products, 
-  each user has an id, and also a Wishlist, no need to implement a login system; create all CRUD operations for Users, Cart and Wishlist, use H2 (in-memory) as a database)
-* Create unit tests for it
-* Please make sure to implement all those things, and meet the deadline
-* Comments would be a nice addition 
+This is a real-world example of JWT Auth and is production-ready.
 
-Please make sure to have the extra endpoints:
+## Usage
+Clone the repository and build with Gradle `./gradlew build`. Make sure that your database is running.
 
-* An endpoint where i can get all the carts from all the users, sorted by the total of the products (a product must 
-have a name, price and a quantity)
-* An endpoint where i can get all the users sorted by their number of orders (users will also have order history, 
-  make sure to implement it)
+Check if the project is running by starting Swagger in your preferred browser. You can find the Swagger documentation [here](http://localhost:8095/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/). Make sure that the dev profile is activated, otherwise you won't be able to access swagger.
 
-### Reference Documentation
 
-For further reference, please consider the following sections:
+## API Reference (Swagger)
+After you run the project locally, swagger can be found [here](http://localhost:8095/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/), if dev profile is activated.
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.6.6/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.6.6/maven-plugin/reference/html/#build-image)
-* [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.6.6/reference/htmlsingle/#boot-features-jpa-and-spring-data)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/2.6.6/reference/htmlsingle/#boot-features-developing-web-applications)
+To activate the dev profile, edit the run configuration and add the following line:
+`dev` in the Active profiles field.
 
-### Guides
+## License
+This project is licensed under the [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/).
 
-The following guides illustrate how to use some features concretely:
-
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
-
+## Others
+For other projects / cool stuff, follow me on
+[GitHub](https://github.com/xrusu)
